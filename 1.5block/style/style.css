@@ -36,9 +36,11 @@
 .brands-menu__item{
     position: relative;
 }
+
 .brands-menu__item-logo {
     margin-left: 16px;
 }
+
  .brands-menu__item::after {
     content: "";
     position: absolute;
@@ -49,6 +51,7 @@
     z-index: 2;
     background-image: url('./logo-pics/go.svg');
 }
+
 .brands-menu__title {
     font-weight: 400;
     padding: 16px;
@@ -62,15 +65,16 @@
     background-image: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
     }
 
-.brands-menu__nav--advanced {
-    display: none;
-}
-
 @media(min-width:758px){
     .brands-menu__title {
     height: 56px;
     }
 }
+
+.brands-menu__nav--advanced {
+    display: none;
+}
+
 .brands-menu__item {
     min-width: 224px;
     width: 240px;
@@ -85,7 +89,6 @@
     border-radius: 6px;
  }
  .brands-menu__btn-more {
-    width: 200px;
     display: none;
     background: transparent;
     border: none;
@@ -109,7 +112,7 @@
         padding: 16px;
      }
      .brands-menu__nav--advanced, .brands-menu__btn-more {
-         display:none;
+         display: none;
      }
      .swiper {
          min-width: 320px;
@@ -126,13 +129,6 @@
          z-index: 2;
      }
  }
- 
-  @media (min-width:1120px) {
-     .brands-menu__nav--advanced--open {
-        height: auto;
-     }
- }
- 
 
  @media (min-width:768px) {
     .swiper {
@@ -190,7 +186,5 @@
     .brands-menu__nav--advanced--open {
         height: auto;
     }
-
 }
-
 
