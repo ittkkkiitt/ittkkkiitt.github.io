@@ -1,0 +1,398 @@
+@font-face {font-family: "Granjon"; src: url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.eot"); src: url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.woff") format("woff"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.svg#Granjon") format("svg"); }
+@font-face {font-family: "Acumin Variable Concept"; src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot"); src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff") format("woff"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.svg#Acumin Variable Concept") format("svg"); }
+@font-face {font-family: "Mysl"; src: url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.eot"); src: url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.svg#Mysl") format("svg"); }
+:root {
+  --curs-font: 'Granjon';
+  --strict-font: 'Acumin Variable Concept';
+  --deep-red: rgb(225, 0, 0);
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+*,*::after,*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Granjon', sans-serif;
+}
+button {
+  background: transparent;
+  border: none;
+}
+
+.header {
+  font-family: 'Granjon', sans-serif;
+    position: fixed;
+    z-index: 5;
+    color:white;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid white ;
+ }
+ .header__icon-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+ }
+ .header__icon {
+    margin-right: 25px;
+ }
+ .header:hover {
+  transition: 0.4s;
+  color: black;
+  background-color: white;
+  transition: 0.4s;
+}
+.header--active {
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+  color: black;
+  background-color: white;
+}
+
+.header--active > nav a {
+  color: black;
+  } 
+ svg:hover{
+    cursor: pointer;
+ }
+
+span {
+    display: block;
+    font-size: 15px;
+}
+.header:hover > nav a {
+color: black;
+} 
+a {
+  text-decoration: none;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+}
+nav a {
+  font-size: 20px;
+  color: white;
+}
+
+.main-image--shade{
+    background-color: rgba(0, 0, 0, 0.214);
+    margin: 0%;
+    position: absolute;
+    top: 0px;
+    margin-bottom: 0%;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-image {
+  background-position-x: center ;
+    z-index: 0;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../style/Img/cover/gucciHeadPic.jpg');
+}
+.main-image--swiper {
+  position: absolute;
+  top: 0;
+}
+.header__link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.4s;
+  text-decoration: none;
+}
+.header__nav {
+    padding: 15px;
+    display: flex;
+    height:100px;
+    font-size: large;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+ }
+ .header__logo {
+  width: 100px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+
+ul {
+    font-family: "Acumin Variable Concept", serif;
+    font-size: larger;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    list-style-type: square;
+}   
+body {
+    background-color:rgb(255, 255, 255);
+    font-family: 'Granjon';
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.option-bar {
+  font-family: "Acumin Variable Concept";
+  width: 100%;
+  height: 55px;
+  background-color: white;
+}
+.option-bar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.option-bar__item {
+  border-bottom: 1px solid black;
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0;
+  max-width: 100px;
+}
+.option-bar__btn {
+  font-size: 20px;
+}
+.option-bar__item:hover {
+  cursor: pointer;
+}
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+.text-container {
+  width: 800px;
+  margin: 40px;
+}
+.item-container {
+   text-align: center;
+}
+.header-scroll {
+  height: 70px;
+  color: black;
+  background-color: white;
+  stroke: black; fill: black;
+}
+.header-scroll ~ path {
+  transition: 0.4s;
+  stroke: red;
+  fill : white;
+}
+.header-scroll .header__nav{
+ visibility: hidden;
+}
+.header-scroll .header__nav .header__logo {
+  font-size: 20px;
+  transition: 0.4s;
+  visibility: visible;
+  color: black;
+ }
+ .header-scroll .icon{
+  margin-top: 18px;
+  width: 22px;
+  height: 22px;
+  transition: 0.4;
+ }
+ .fix {
+  z-index: 5;
+  top: 70px;
+  position: fixed;
+ }
+.header-2 nav a {
+  color: black;
+}
+.header-2 {
+  border: 1.2px solid black;
+  color: black;
+}
+.header-2 path {
+  stroke: black; fill: none;
+}
+.header path {
+  fill: none;
+  stroke: white;
+}
+.header-2 path {
+  fill:none;
+  stroke: black;
+}
+header:hover path {
+  transition: 0.4s;
+  stroke: red;
+  fill : white;
+}
+@media (max-width: 768px) {
+  .header__link {
+    display: none;
+  }
+  .header__logo {
+    display: block;
+  }
+}
+
+.aside {
+   transition: 0.3s;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    top: 100px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #1B1C21;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+}
+.aside__nav { 
+  padding-top: 40px;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.aside__item {
+  padding: 16px;
+}
+.aside__item:hover, .aside__item:focus {
+  border-bottom: 1px solid black;
+}
+.aside__link {
+  color: black;
+}
+.hide {
+  overflow: hidden;
+  transition: 0.3s;
+  transform: translateX(0);
+}
+.header__btn--close {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 100px;
+  height: 100px;
+}
+.header__btn--close path{
+  fill: white;
+  stroke: white;
+}
+@media (max-width:768px) {
+  .header__btn--close {
+    display: initial;
+  }
+}
+@media (min-width:320px) and (max-width:768px) {
+  .header__icon-container {
+    top:34px;
+    right: 0;
+  }
+  .header__icon {
+    margin-right: 10px;
+  }
+}
+.header--active .header__btn--close path {
+  stroke: red;
+  fill: none;
+}
+
+input[type='radio']{
+  display: none;
+}
+
+#gender-male:checked ~ label[for='gender-male']{
+  border-bottom: 1px solid black;
+}
+#gender-female:checked ~ label[for='gender-female']{
+  border-bottom: 1px solid black;
+}
+#gender-unisex:checked ~ label[for='gender-unisex']{
+  border-bottom: 1px solid black;
+}
+#gender-all:checked ~ label[for='gender-all']{
+  border-bottom: 1px solid black;
+}
+.option-bar__inner-radio{
+  display: none;
+  background-color: white;
+  position: absolute;
+  justify-content: center;
+  width: 200px;
+  z-index: 2;
+  height: 120px;
+}
+.option-bar__form--gender {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.option-bar__inner-menu{
+  display: none;
+  position: absolute;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  z-index: 2;
+  background-color: white;
+
+}
+.option-bar__radio-item {
+  margin-top: 10px;
+}
+.option-bar__form--price {
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+}
+.option-bar__inner-item{
+  margin-top: 10px;
+}
+#sort-to-min:checked ~ label[for='sort-to-min']{
+  border-bottom: 1px solid black;
+}
+#sort-to-max:checked ~ label[for='sort-to-max']{
+  border-bottom: 1px solid black;
+}
+#reset:checked ~ label[for='reset']{
+  border-bottom: 1px solid black;
+}
+label:hover {
+  border-bottom: 1px solid black;
+}
+.item-gender:hover .option-bar__inner-radio{
+  display: flex;
+}
+.item-price:hover .option-bar__inner-menu{
+  display: flex;
+}
+
