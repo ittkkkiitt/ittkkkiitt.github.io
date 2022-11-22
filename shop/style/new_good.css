@@ -21,12 +21,12 @@
 }
 .header.header--active {
 	border-bottom: none;
+	background-color: transparent;
 }
 
  .container {
    
      justify-content: center;
-     height: 100%;
 	 width: 100%;
 	 display: flex;
 	 background-color: #ffffff;
