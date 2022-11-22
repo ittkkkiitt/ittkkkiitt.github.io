@@ -39,7 +39,7 @@ class Products {
             if (actualSale !== 0 ) {
                 actualPrice = Math.floor(+actualPrice - ((+actualPrice * +actualSale)/100)) ;
                 htmlCatalog += `
-                <div class = 'shop-item' data-sort = '${price}' data-gender = '${gender}'>
+                <div class = 'shop-item' data-sort = '${actualPrice}' data-gender = '${gender}'>
                 <div class = 'shop-inner-text ${activeClass}' onclick="productsPage.handleSetLocationStorage(this, '${id}');">${activeText}</div>
                 <div class = 'shop-item__img' style = "background-image: url('${img}');" ></div>
               
