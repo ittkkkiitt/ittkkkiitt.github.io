@@ -42,7 +42,6 @@ class Products {
                 <div class = 'shop-item' data-sort = '${actualPrice}' data-gender = '${gender}' data-sale = '${actualSale}'>
                 <div class = 'shop-inner-text ${activeClass}' onclick="productsPage.handleSetLocationStorage(this, '${id}');">${activeText}</div>
                 <div class = 'shop-item__img' style = "background-image: url('${img}');" ></div>
-              
                 <span class = 'shop-item__name'>${name}</span>
                 <span class = 'shop-item__price shop-item__sale' ><span class = 'shop-item__old-price'>€ ${price}</span><span class = 'shop-item__new-price'>€ ${actualPrice}</span></span>`;
             } else {

@@ -11,7 +11,7 @@ a {
     color: #000;
 }
 body {
-    font-family: var(--curs-font);
+    font-family: var(--main-font);
     font-size: 14px;
     max-height: 100vh;
     color:#000;
@@ -72,7 +72,7 @@ body {
     display: flex;
     min-width: 0;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .discount-item__img {
@@ -92,7 +92,7 @@ body {
   .ticker__line {
     color:white;
     padding: 2px;
-    font-family: var(--curs-font);
+    font-family: var(--main-font);
     text-align:center;
     font-weight: 700;
     text-transform: uppercase;
@@ -159,11 +159,9 @@ body {
 .discount-item__link {
     width: 100px;
     font-family: var(--strict-font);
-    font-size: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .link-decor {
     margin-right: 7px;
@@ -193,6 +191,7 @@ body {
         flex-direction: row;
     }
 }
+
 .discount-item__price--old > .sale-count {
     display: inline-block;
     font-size: 22px;
@@ -206,4 +205,11 @@ body {
         height: auto;
         min-width: 500px;
     }
+    .discount-item__caption {
+       font-size: 2em;
+    }
+    .discount-item__title {
+        font-size: 4em;
+    }
+
 }

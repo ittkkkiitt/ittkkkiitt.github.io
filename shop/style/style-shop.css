@@ -1,11 +1,13 @@
 @import url('./font/Granjon.css');
 @import url('./font/Graphik.css');
+@import url('./font/Mysl.css');
 /* @font-face {font-family: "Granjon"; src: url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.eot"); src: url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.woff") format("woff"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/07f440c268234231a613c56d4eb08ed8.svg#Granjon") format("svg"); }
 @font-face {font-family: "Acumin Variable Concept"; src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot"); src: url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff") format("woff"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.svg#Acumin Variable Concept") format("svg"); } */
-@font-face {font-family: "Mysl"; src: url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.eot"); src: url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.svg#Mysl") format("svg"); }
+/* @font-face {font-family: "Mysl"; src: url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.eot"); src: url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4acb97e4a0a64eb50709867c6799990c.svg#Mysl") format("svg"); } */
 :root {
-  --curs-font: 'Granjon';
+  --main-font: 'Granjon';
   --strict-font: 'Graphik';
+  --italic-font: 'Mysl';
   --deep-red: rgb(225, 0, 0);
 }
 ::-webkit-scrollbar {
@@ -17,7 +19,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--curs-font);
+  font-family: var(--main-font);
 }
 button {
   background: transparent;
@@ -25,7 +27,7 @@ button {
 }
 
 .header {
-  font-family: var(--curs-font);
+  font-family: var(--main-font);
     position: fixed;
     z-index: 5;
     color:white;
@@ -64,7 +66,7 @@ span {
     display: block;
     font-size: 15px;
 }
-.header:hover > nav a {
+.header:hover .header__link{
 color: black;
 } 
 a {
@@ -144,7 +146,7 @@ ul {
 }   
 body {
     background-color:rgb(255, 255, 255);
-    font-family: var(--curs-font);
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
     color: black;

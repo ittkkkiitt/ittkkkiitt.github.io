@@ -4,8 +4,9 @@
      padding: 0;
 }
 body {
+    background-color: black;
+    font-family: var(--main-font);
     color: white;
-    background-color: var(--bg-flower);
 }
  a {
 	 text-decoration: none;
@@ -17,7 +18,7 @@ body {
     width: 90%;
     letter-spacing: 2px;
     font-size: 16px;
-    font-family: "Mysl";
+    font-family: var(--italic-font);
 }
 .header {
     border:none;
@@ -36,9 +37,10 @@ body {
     background-size: cover;
 }
 .main-page__caption {
+    letter-spacing: 4px;
     position: relative;
     padding: 30px;
-    font-size: 16px;
+    font-size: 18px;
 }
 @media (min-width: 768px) {
     .main-page__caption {

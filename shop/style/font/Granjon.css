@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Granjon LT Std';
+    font-family: 'Granjon';
     src: url('GranjonLTStd-Italic.eot');
-    src: local('Granjon LT Std Italic'), local('GranjonLTStd-Italic'),
+    src: local('Granjon Italic'), local('GranjonLTStd-Italic'),
         url('GranjonLTStd-Italic.eot?#iefix') format('embedded-opentype'),
         url('GranjonLTStd-Italic.woff2') format('woff2'),
         url('GranjonLTStd-Italic.woff') format('woff'),
@@ -12,9 +12,9 @@
 }
 
 @font-face {
-    font-family: 'Granjon LT Std';
+    font-family: 'Granjon';
     src: url('GranjonLTStd-Bold.eot');
-    src: local('Granjon LT Std Bold'), local('GranjonLTStd-Bold'),
+    src: local('Granjon Bold'), local('GranjonLTStd-Bold'),
         url('GranjonLTStd-Bold.eot?#iefix') format('embedded-opentype'),
         url('GranjonLTStd-Bold.woff2') format('woff2'),
         url('GranjonLTStd-Bold.woff') format('woff'),
@@ -25,9 +25,9 @@
 }
 
 @font-face {
-    font-family: 'Granjon LT Std';
+    font-family: 'Granjon';
     src: url('GranjonLTStd.eot');
-    src: local('Granjon LT Std Roman'), local('GranjonLTStd'),
+    src: local('Granjon Roman'), local('GranjonLTStd'),
         url('GranjonLTStd.eot?#iefix') format('embedded-opentype'),
         url('GranjonLTStd.woff2') format('woff2'),
         url('GranjonLTStd.woff') format('woff'),
