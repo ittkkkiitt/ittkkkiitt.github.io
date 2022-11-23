@@ -17,6 +17,7 @@ body {
     color:#000;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .aside {
     position: fixed;
@@ -226,8 +227,9 @@ body {
     content: "";
 }
 .swiper-button-next {
+    overflow-x: hidden;
     position: absolute;
-     right: -10px;
+     right: 0;
      background-image: url('../style/Img/interface/swiperbtn.svg');
      width: 40px;
      background-size: cover;
@@ -235,12 +237,18 @@ body {
      height: 40px;
 }
 .swiper-button-prev {
+    overflow-x: hidden;
    position: absolute;
-    left: -10px;
+    left: 0;
     background-image: url('../style/Img/interface/swiperbtn.svg');
     width: 40px;
     transform: rotate(180deg);
     background-size: cover;
     background-position: center;
     height: 40px;
+}
+@media (max-width: 767px) {
+    .discount-item__link {
+        margin-left: 20px;
+    }
 }
