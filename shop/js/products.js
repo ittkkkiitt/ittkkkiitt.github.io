@@ -22,6 +22,9 @@ class Products {
             let activeClass = '';
             let actualSale = +sale;
             let actualPrice = +price;
+            if (!(productsStore.indexOf(String(id)) === -1)) {
+                activeClass = ' '+this.classNameActive+' ';
+            } 
             if (actualSale !== 0 ) {
                 actualPrice = Math.floor(+actualPrice - ((+actualPrice * +actualSale)/100)) ;
                 htmlCatalog += `
