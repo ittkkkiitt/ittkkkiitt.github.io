@@ -1,0 +1,191 @@
+@import url(fonts.css);
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TT Lakes", sans-serif;
+ }
+
+body {
+    background-color: #F2F2F2;
+ }
+
+ a:hover, button:hover {
+    cursor: pointer;
+ }
+
+.brands__nav {
+    width: 100%;
+    padding: 16px 0;
+    grid-template-columns: repeat(auto-fit, 240px);
+}
+
+.swiper-pagination-bullet {
+    background-color: #9d9d9d;
+    width: 12px;
+    height: 12px;
+ }
+
+ .swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.brands__item {
+    margin: 0 16px;
+    min-width:240px;
+    max-width: 240px;
+    position: relative;
+    display: flex;
+    height: 72px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #EAEAEA;
+    background-color: white;
+    border-radius: 6px;
+ }
+
+.brands__item-logo {
+    margin-left: 16px;
+}
+
+.brands__icon {
+    margin-left: auto;
+    margin-right: 16px;
+    transition: .4s;
+}
+
+.brands__item:hover ,
+.brands__item:focus {
+    transition: .3s;
+    box-shadow: 0 0 2px 2px #FF3E79;
+    transform: scale(0.97);
+ }
+
+.brands__item:hover .brands__icon,
+.brands__item:focus .brands__icon{
+    transform: rotate(180deg);
+    transition: .4s;
+}
+
+.brands__title {
+    font-weight: 400;
+    padding: 16px;
+    letter-spacing: -0.2px;
+    height: 80px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+
+.brands__nav--advanced {
+    display: none;
+}
+
+
+ @media(min-width:768px) {
+    .brands__title {
+        height: 56px;
+    }
+    .brands__item {
+        min-width: 224px;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+ .brands__btn-more {
+    margin-left: 24px;
+    display: none;
+    background: transparent;
+    border: none;
+    font-family: 'TT Lakes';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+.btn-more__icon {
+    transition: .4s;
+    width: 24px;
+    height: 24px;
+}
+.btn-more__icon--active {
+    transition: .4s;
+    transform: rotate(180deg);
+}
+
+.btn-more__caption {
+    margin-left:8px;
+}
+
+.swiper {
+    min-width: 320px;
+    min-height: 134px;
+}
+
+.swiper::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 72px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    top: 16px;
+    right: 0;
+    z-index: 2;
+}
+
+ @media (min-width:768px) {
+    .brands__nav--advanced {
+        display: initial;
+    }
+    .brands__btn-more {
+        display: flex;
+    }
+    .brands {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .brands-container {
+        width: 100%;
+    }
+    .brands__nav--advanced {
+        height: calc(72px*2 + 24px + 16px * 2);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 72px;
+        overflow: hidden;
+        padding: 24px 24px;
+        column-gap: 24px;
+        row-gap: 16px;
+     }
+    .brands__nav--advanced--open {
+       height: auto;
+    }
+ }
+
+@media (min-width:1120px){
+    .brands__item {
+        min-width: 240px;
+        max-width: 100%;
+    }
+    .brands__nav--advanced {
+        height: calc(72px * 2 + 24px + 16px * 2);
+        padding: 24px 0;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
+        padding: 24px 32px;
+    }
+    .brands__nav--advanced--open {
+        height: auto;
+    }
+}
+
+
